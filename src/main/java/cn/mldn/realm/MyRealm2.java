@@ -17,7 +17,7 @@ import cn.mldn.vo.Member;
 public class MyRealm2 extends AuthorizingRealm {
 	@Override
 	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
-		System.out.println("  ********** 2、用户角色与权限：doGetAuthorizationInfo **********");
+		System.out.println("  哈哈********** 2、用户角色与权限：doGetAuthorizationInfo **********");
 		String username = (String) principals.getPrimaryPrincipal() ;	// 取得用户登录名
 		SimpleAuthorizationInfo auth = new SimpleAuthorizationInfo() ;	// 定义授权信息的返回数据
 		MemberLoginService service = new MemberLoginService() ;	// 进行业务层处理
